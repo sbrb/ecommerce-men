@@ -1,0 +1,575 @@
+{
+	"info": {
+		"_postman_id": "108518e5-28c7-48a6-93f7-a19dba718057",
+		"name": "Project-5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20527530"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fname",
+									"value": "absdrsfg",
+									"type": "text"
+								},
+								{
+									"key": "lname",
+									"value": "ccasef",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "aowrdedtdabc@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"type": "file",
+									"src": "/C:/Users/SHAYAN BISWAS/Downloads/uwp200233.jpeg"
+								},
+								{
+									"key": "phone",
+									"value": "8645453451",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12Asagag$",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "{\"shipping\": {\"street\": \"rrgr\",\"city\": \"6d gd\",\"pincode\": 123415 },\"billing\": {\"street\": \"rrgr\",\"city\": \"drfg\",\"pincode\": 123415 } }",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "awrdedtdabc@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12Asagag$",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzQ5NWY3Y2QyZmYzYzQyOGE2NWJmNGUiLCJpYXQiOjE2NjU5MTg1MjYsImV4cCI6MTY5NzQ1NDUyNn0.240FLW9t4DYtTBg7t14oo8Mu-z_M37sHJVrwEGgLD5A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user/63495f7cd2ff3c428a65bf4e/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"63495f7cd2ff3c428a65bf4e",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzQ2ODZmNTkyNjg1Yzk3OTM2NzkyM2EiLCJpYXQiOjE2NjU1NjY0ODcsImV4cCI6MTY5NzEwMjQ4N30.Mf4Fsk3gldp1LFV6AAxm7BwmqmHnDcWnSXL0mxQY5ms",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fname",
+									"value": "Shayan",
+									"type": "text"
+								},
+								{
+									"key": "lname",
+									"value": "Biswas",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "rdr@gmail.co",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "9942424262",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "12Asagag$",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "profileImage",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "{\"shipping\": {\"street\": \"wr\",\"city\": \"666\",\"pincode\": 123415 },\"billing\": {\"street\": \"rrgr\",\"city\": \"drfg\",\"pincode\": 123415 } }",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "adress.shiping.city",
+									"value": "\"dfg\"",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/user/634686f592685c979367923a/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"634686f592685c979367923a",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "createProduct",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "e",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "Blue baseball cap. Will protect your skull from heat, bullets and punches.",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "100",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "currencyId",
+									"value": "INR",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "style",
+									"value": "baseball",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "availableSizes",
+									"value": "XS",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "installments",
+									"value": "4",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"type": "file",
+									"src": "/C:/Users/SHAYAN BISWAS/Downloads/uwp200233.jpeg",
+									"disabled": true
+								},
+								{
+									"key": "currencyFormat",
+									"value": "INR",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProductByQueary",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:3000/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "aaa",
+									"disabled": true
+								},
+								{
+									"key": "priceGreaterThan",
+									"value": "1000",
+									"disabled": true
+								},
+								{
+									"key": "priceLessThan",
+									"value": "100.456745667",
+									"disabled": true
+								},
+								{
+									"key": "size",
+									"value": "m",
+									"disabled": true
+								},
+								{
+									"key": "priceSort",
+									"value": "-13",
+									"disabled": true
+								},
+								{
+									"key": "style",
+									"value": "classic",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProductById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/products/634a8063f860634d33943f3b",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"634a8063f860634d33943f3b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateProducts",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/products/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteProduct",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/products/634a8063f860634d33943f3b",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"634a8063f860634d33943f3b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cart",
+			"item": [
+				{
+					"name": "createProduct",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000//users//cart",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"",
+								"users",
+								"",
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCart",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000//users//cart",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"",
+								"users",
+								"",
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCart",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000//users//cart",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"",
+								"users",
+								"",
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCart",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000//users//cart",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"",
+								"users",
+								"",
+								"cart"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "createOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000//users/:userId/orders",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"",
+								"users",
+								":userId",
+								"orders"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateOrder",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000//users/:userId/orders",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"",
+								"users",
+								":userId",
+								"orders"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "gg",
+			"value": "{{product_id1}}"
+		},
+		{
+			"key": "user_token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzU1N2ViYmY0MDYyMmNkZTYwNDQ4NjYiLCJpYXQiOjE2NjY1OTE3NDksImV4cCI6MTY5ODEyNzc0OX0.VkOXUwfEP3kO9CxBkrVFkV2X0CymzQW_2Cxsb1pg5rI"
+		}
+	]
+}
